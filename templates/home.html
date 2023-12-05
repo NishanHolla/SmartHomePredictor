@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Brokerage</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Residential Price Growth (%)', 'Residential Sector Expansion (%)', 'City-wide Rentals Growth (%)'],
+                ['2022',  0, 0, 0],
+                ['2023 Q1',  1.25, 10, 2],
+                ['2023 Q2',  2.5, 20, 4],
+                ['2023 Q3',  3.75, 30, 6],
+                ['2023 Q4',  5, 40, 8],
+                ['2024 (Forecast)',  6.25, 50, 10]
+            ]);
+
+            var options = {
+                title: 'Bangalore Real Estate Trends',
+                curveType: 'function',
+                legend: { position: 'bottom' },
+                backgroundColor: 'transparent'  // Make the chart background transparent
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+     <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Property Type', 'Returns'],
+                ['Residential Properties', 35],
+                ['Commercial Properties', 30],
+                ['Retail Properties', 20],
+                ['Industrial Properties', 15]
+            ]);
+
+            var options = {
+                title: 'Returns of Various Types of Real Estate in Bangalore',
+                backgroundColor: 'transparent',
+                is3D: true
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/predict">Price Predictor</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+        <h1>Property Brokerage</h1>
+    </header>
+    <main style="background-image: url('https://franksalt.com.mt/wp-content/uploads/Property-Investment-Malta-2048x1152-1-1024x576.webp'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+        <div class="container">
+            <div id="welcome-text">
+                <h1>Why Invest in Bangalore Real Estate?</h1>
+                <div style="display: flex;">
+                    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+                    <div id="piechart2" style="width: 900px; height: 500px;"></div>    
+                </div>
+            </div>
+            <div id="content">
+                <h2>IT Hub of India</h2> <p>Bangalore, also known as Bengaluru, is often referred to as the Silicon Valley of India due to its role as the nation’s leading information technology (IT) exporter. The city is home to many IT companies, both Indian and international, including Infosys, Wipro, TCS, Oracle, Accenture, and many more. These companies have set up large campuses in the city, employing thousands of people. The presence of these companies has led to increased demand for both residential and commercial properties, as employees need places to live and businesses need office space. This has led to a boom in the real estate sector in the city.</p>
+
+                <h2>Excellent Connectivity</h2> <p>Bangalore is well-connected by a network of roads, railways, and a rapidly expanding metro system. The city’s infrastructure is constantly being upgraded to keep up with its rapid growth. The Outer Ring Road (ORR) and the NICE Road provide easy access to different parts of the city and its suburbs. The Bangalore Metro, also known as Namma Metro, is a rapid transit system serving the city, making it easy to commute within the city and reducing traffic congestion. The Kempegowda International Airport provides domestic and international flight connectivity. All these factors make Bangalore an attractive destination for real estate investment.</p>
+
+                <h2>Rapid Economic Growth</h2> <p>The city’s strong economy, driven by the IT sector, attracts people from all over the country and the world. This influx of people has led to a high demand for real estate, pushing up property prices. The city’s GDP is expected to grow at a healthy rate in the coming years, further fueling the real estate market. The government’s initiatives to promote Bangalore as an IT hub have also contributed to the city’s economic growth and real estate development.</p>
+
+                <h2>Diverse Real Estate Options</h2> <p>Whether you’re looking for a luxury apartment, a villa, a plot of land, or a commercial space, Bangalore’s real estate market has something to offer for everyone. The city has a wide range of residential options, from affordable housing to luxury villas and apartments. The commercial real estate market is also booming, with many companies setting up offices in the city. There are also many upcoming projects in the pipeline, offering a wide range of options for investors and homebuyers.</p>
+
+                <h2>Future Growth Potential</h2> <p>With numerous infrastructure projects in the pipeline, such as the expansion of the metro network and the development of new IT parks, Bangalore’s real estate market is expected to continue growing in the future. The city’s strategic location as a major IT hub, coupled with its pleasant climate and cosmopolitan culture, makes it an attractive destination for people from all over the country and the world. This ensures a steady demand for real estate, making it a good option for investment.</p>
+
+                <h2>Quality of Life</h2> <p>Bangalore offers a high quality of life with its cosmopolitan culture, pleasant weather, and abundance of green spaces. The city has many parks, lakes, and recreational areas, earning it the nickname “Garden City”. It also has a vibrant food and nightlife scene, with numerous restaurants, pubs, and clubs. The city is also known for its high-quality educational institutions and healthcare facilities. All these factors make Bangalore an attractive place to live, further driving demand for real estate.</p>
+
+                <h2>Government Initiatives</h2> <p>The government has taken several initiatives to boost the real estate sector in Bangalore. These include infrastructure development projects, the promotion of affordable housing, and reforms in real estate regulations. The government’s proactive approach has created a favorable environment for real estate development and investment in the city.</p>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h2>About</h2>
+            <p>Property Brokerage is a leading real estate company offering comprehensive services to buyers, sellers, and property owners. With a strong focus on customer service and a commitment to excellence in all that we do, we strive to exceed your expectations in every aspect of real estate.</p>
+        </div>
+        <p>© 2023 Property Brokerage</p>
+    </main>
+</body>
+</html>
