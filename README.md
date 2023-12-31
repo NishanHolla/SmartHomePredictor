@@ -1,4 +1,4 @@
-# Flask Analytics and House Price Prediction
+# Smart House Price Prediction and Analytics
 
 Welcome to our Flask-powered website that seamlessly integrates analytics and sophisticated house price prediction using Python's machine learning capabilities. Whether you are a home buyer, seller, or investor, our platform provides valuable insights into property prices around Bangalore.
 
